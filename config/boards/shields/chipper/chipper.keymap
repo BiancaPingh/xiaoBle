@@ -66,13 +66,13 @@
                         display-name = "Base";
                         bindings = <
             //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-&bht LS(LC(LALT)) ESC  &bht LS(LC(LALT)) Q   &kp W    &kp E         &kp R         &kp T             &kp Y         &kp U         &bht PIPE I   &kp O         &lt FN P      &kp DEL
+&bht LS(LC(LALT)) ESC  &bht LS(LC(LALT)) Q   &kp W    &kp E         &kp R         &kp T             &kp Y         &kp U         &bht PIPE I   &kp O         &lt FN P      &kp BSPC
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼──────[───────┼──────|──────┼─────────────┼─────────────┤ ├──────┤
-&bht LS(LC(LA(LGUI))) TAB   &bht LG(A) A     &kp S    &kp D      &bht LG(F) F     &kp G            &bht HASH H    &kp J         &kp K         &kp L         &kp RET       &kp RSHFT
+&bht LS(LC(LA(LGUI))) TAB   &bht LG(A) A     &kp S    &kp D      &bht LG(F) F     &kp G            &bht HASH H    &kp J         &kp K         &kp L         &kp RET       &kp ENT
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────#──────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-&bht LCTRL BSPC    &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N         &kp M       &bht SEMI COMMA &bht COLON DOT &bht SQT QMARK  &kp RALT
+     &bht LCTRL BSPC     &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N       &kp M   &bht SEMI COMMA &bht COLON DOT &bht SQT QMARK  &kp RALT
             //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-                                                    &kp LSHFT      &sk LGUI      &lt NAV SPC       &lt NUM SPC    &kp BSPC    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
+                                                    &kp LSHFT      &sk LGUI      &lt NAV SPC       &lt NUM SPC    &kp DEL    &lt SYS RSHFT
              //                                    ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
@@ -110,14 +110,19 @@
 		};
 		
 		        NUM_layer {
+                    // -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |  6  |  7  |  8  |  9  |  0  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |  1  |  2  |  3  |  4  |  5  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Number, Symbol";
                         bindings = <
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────────────┬──────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-    ___     &bht DQT QMARK &kp LT        &kp HASH      &kp GT        &kp BSLH       &bht EXCL EQUAL  &bht PLUS N7 &bht MINUS N8 &bht UNDER N9  &kp RG(P)     ___
+  &kp  TAB       &kp EXCL      &kp AT       &kp HASH      &kp DLLR    &kp PRCNT       &kp CARET      &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp BSPC    
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────=!──────┼──────7+──────┼─────8-──────┼─────9_──────┼─────────────┤ ├──────┤
-    ___     &kp AT         &kp LPAR      &kp MINUS     &kp RPAR      &kp GRAVE      &bht HASH KP_DOT &bht STAR N4 &bht FSLH N5  &bht BSLH N6  ___           ___
+  &kp LCTRL    &N6       &N7              &N8           &N9             &N0            &kp MINUS     &kp EQUAL     &kp LBKT       &kp RBKT     &kp BSLH     &kp GRAVE
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────.#──────┼─────4*───────┼──────5/─────┼──────6\─────┼─────────────┤ ├──────┤
-    ___     ___            &kp LBKT        &kp PIPE    &kp RBRC      ___            &bht PRCNT N0   &bht PIPE N1   &bht AMPS N2  &bht HASH N3  ___           ___
+ &kp LSHFT    &N1             &N2            &N3       &N4              &N5          &kp UNDER     &kp PLUS       &kp LBRC      &kp RBRC      &kp PIPE    &kp TILDE
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────0%──────┼──────1|──────┼─────2&──────┼──────3──────┼─────────────╯ ╰──────╯
                                          ___           ___           ___             ___           &kp DEL        ___                                    
 //                                     ╰─────────────┴─────────────┴─────────────╯ ╰──────────────┴──────────────┼─────────────╯                                     
