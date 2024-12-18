@@ -66,13 +66,13 @@
                         display-name = "Base";
                         bindings = <
             //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
-&bht LS(LC(LALT)) ESC  &bht LS(LC(LALT)) Q   &kp W    &kp E         &kp R         &kp T             &kp Y         &kp U         &bht PIPE I   &kp O         &lt FN P      &kp DEL
+&bht LS(LC(LALT)) ESC  &bht LS(LC(LALT)) Q   &kp W    &kp E         &kp R         &kp T             &kp Y         &kp U         &bht PIPE I   &kp O         &lt FN P      &kp BSPC
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼──────[───────┼──────|──────┼─────────────┼─────────────┤ ├──────┤
-&bht LS(LC(LA(LGUI))) TAB   &bht LG(A) A     &kp S    &kp D      &bht LG(F) F     &kp G            &bht HASH H    &kp J         &kp K         &kp L         &kp RET       &kp RSHFT
+&bht LS(LC(LA(LGUI))) TAB   &bht LG(A) A     &kp S    &kp D      &bht LG(F) F     &kp G            &bht HASH H    &kp J         &kp K         &kp L         &bht DQT SQT       &kp RET
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────#──────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-&bht LCTRL BSPC    &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N         &kp M       &bht SEMI COMMA &bht COLON DOT &bht SQT QMARK  &kp RALT
+&bht LCTRL BSPC    &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N         &kp M       &bht SEMI COMMA &bht COLON DOT &bht FSLH QMARK  &kp RSHFT
             //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-                                                    &kp LSHFT      &sk LGUI      &lt NAV SPC       &lt NUM SPC    &kp BSPC    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
+                                                    &kp LSHFT      &kp LALT LGUI    &lt NAV SPC       &lt NUM SPC    &kp DEL    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
              //                                    ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
