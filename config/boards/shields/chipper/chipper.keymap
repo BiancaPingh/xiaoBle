@@ -72,7 +72,7 @@
             //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├──────#──────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
 &bht LCTRL BSPC    &lt FN Z    &bht LG(X) X   &bht LG(C) C   &bht LG(V) V  &bht LS(LC(LA(V))) B     &kp N         &kp M       &bht SEMI COMMA &bht COLON DOT &bht FSLH QMARK  &kp RSHFT
             //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-                                                    &kp LSHFT      &kp LALT LGUI    &lt NAV SPC       &lt NUM SPC    &kp DEL    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
+                                                    &kp LSHFT      &bht LALT LGUI    &lt NAV SPC       &lt NUM SPC    &kp DEL    &bht RS(RC(RA(RGUI))) RS(RC(RA(H)))
              //                                    ╰────────────┼──────────────┴─────────────╯   ╰─────────────┴─────────────┼─────────────╯
                         >;
                 };
